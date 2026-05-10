@@ -1,0 +1,23 @@
+digraph G {
+rankdir=LR;
+splines=ortho;
+"afbc6f58" [style=filled, fillcolor=lightblue, shape=circle];
+"86def798" [style=filled, fillcolor=lightblue, shape=circle];
+"afbc6f58" -> "86def798";
+"ebcafa82" [style=filled, fillcolor=lightblue, shape=circle];
+"86def798" -> "ebcafa82";
+"bb3e8cb6" [style=filled, fillcolor=lightblue, shape=circle];
+"afbc6f58" -> "bb3e8cb6";
+"20e0481b" [style=filled, fillcolor=lightblue, shape=circle];
+"ebcafa82" -> "20e0481b";
+"342f98af" [style=filled, fillcolor=lightblue, shape=circle];
+"86def798" -> "342f98af";
+"9328f074" [style=filled, fillcolor=lightblue, shape=circle];
+"bb3e8cb6" -> "9328f074";
+"merge-983fe8" [style=filled, fillcolor=orange, shape=circle];
+"9328f074" -> "merge-983fe8";
+"342f98af" -> "merge-983fe8";
+"merge-c9c0f6" [style=filled, fillcolor=orange, shape=circle];
+"20e0481b" -> "merge-c9c0f6";
+"merge-983fe8" -> "merge-c9c0f6";
+}

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZPT3aOUbM40=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\marus\\Documents\\MiniGIt\\MiniGIt.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\marus\\.nuget\\packages\\microsoft.msagl\\1.1.6\\microsoft.msagl.1.1.6.nupkg.sha512",
+    "C:\\Users\\marus\\.nuget\\packages\\microsoft.msagl.drawing\\1.1.6\\microsoft.msagl.drawing.1.1.6.nupkg.sha512"
+  ],
+  "logs": []
+}

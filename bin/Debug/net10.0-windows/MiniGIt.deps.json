@@ -1,0 +1,60 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "MiniGIt/1.0.0": {
+        "dependencies": {
+          "Microsoft.Msagl": "1.1.6",
+          "Microsoft.Msagl.Drawing": "1.1.6"
+        },
+        "runtime": {
+          "MiniGIt.dll": {}
+        }
+      },
+      "Microsoft.Msagl/1.1.6": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Msagl.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Microsoft.Msagl.Drawing/1.1.6": {
+        "dependencies": {
+          "Microsoft.Msagl": "1.1.6"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Msagl.Drawing.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MiniGIt/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Msagl/1.1.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Fqxj+pmZEo/H2z/LEMFSmtt6GrSj2FKZfz15HhTQRhYRpdewFaC5mPIUxkzELJTac/hbUDb28QBjG/w0JbG2wg==",
+      "path": "microsoft.msagl/1.1.6",
+      "hashPath": "microsoft.msagl.1.1.6.nupkg.sha512"
+    },
+    "Microsoft.Msagl.Drawing/1.1.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xKEOHGDEzf1ulz7GISBxnjsqSl5+YhMhZ1I/UU7GMUkFtrwuShVg+irAZiZeK9VQRePXWeFWVhBlxrc3XulXNQ==",
+      "path": "microsoft.msagl.drawing/1.1.6",
+      "hashPath": "microsoft.msagl.drawing.1.1.6.nupkg.sha512"
+    }
+  }
+}

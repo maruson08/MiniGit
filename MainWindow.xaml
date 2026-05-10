@@ -1,0 +1,90 @@
+﻿<Window x:Class="MiniGit.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MiniGit"
+        Height="700"
+        Width="1200">
+
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- LEFT -->
+        <StackPanel Grid.Column="0"
+                    Margin="10">
+
+            <TextBlock Text="Tracked File"
+                       FontSize="20"
+                       FontWeight="Bold"/>
+
+            <TextBox Name="EditorBox"
+                     AcceptsReturn="True"
+                     Height="250"
+                     Margin="0 10 0 0"
+                     FontFamily="Consolas"
+                     VerticalScrollBarVisibility="Auto"/>
+
+<StackPanel Orientation="Horizontal"
+            Margin="0 10 0 0">
+
+    <TextBlock Text="Current Branch:"
+               VerticalAlignment="Center"
+               Margin="0 0 10 0"/>
+
+    <ComboBox Name="BranchSelector"
+              Width="150"/>
+
+</StackPanel>
+<TextBlock Text="Merge From:"
+           Margin="0 10 0 0"/>
+
+<ComboBox Name="MergeBranchSelector"
+          Width="150"
+          Margin="0 5 0 0"/>
+<Button Content="Commit"
+        Height="40"
+        Margin="0 10 0 0"
+        Click="Commit_Click"/>
+
+<Button Content="Create Branch"
+        Height="40"
+        Margin="0 10 0 0"
+        Click="CreateBranch_Click"/>
+
+<Button Content="Merge Branches"
+        Height="40"
+        Margin="0 10 0 0"
+        Click="Merge_Click"/>
+
+            <TextBlock Text="Merge Result"
+                       Margin="0 20 0 10"
+                       FontWeight="Bold"
+                       FontSize="18"/>
+
+            <TextBox Name="MergeResultBox"
+                     AcceptsReturn="True"
+                     Height="200"
+                     FontFamily="Consolas"
+                     VerticalScrollBarVisibility="Auto"/>
+
+        </StackPanel>
+
+        <!-- RIGHT -->
+
+        <Border Grid.Column="1"
+                Margin="10"
+                BorderBrush="Gray"
+                BorderThickness="1">
+
+            <ScrollViewer>
+                <Image Name="DagImage"/>
+            </ScrollViewer>
+
+        </Border>
+
+    </Grid>
+
+</Window>
