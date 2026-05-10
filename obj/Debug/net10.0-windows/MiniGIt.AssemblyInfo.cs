@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MiniGIt")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8464c4e8249d5d720ddbaeeb63edc1e1112b5d05")]
 [assembly: System.Reflection.AssemblyProductAttribute("MiniGIt")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MiniGIt")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
