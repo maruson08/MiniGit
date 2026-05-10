@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\marus\\Documents\\MiniGIt\\MiniGIt.csproj": {}
+    "C:\\Users\\marus\\Documents\\MiniGit\\MiniGIt.csproj": {}
   },
   "projects": {
-    "C:\\Users\\marus\\Documents\\MiniGIt\\MiniGIt.csproj": {
+    "C:\\Users\\marus\\Documents\\MiniGit\\MiniGIt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marus\\Documents\\MiniGIt\\MiniGIt.csproj",
+        "projectUniqueName": "C:\\Users\\marus\\Documents\\MiniGit\\MiniGIt.csproj",
         "projectName": "MiniGIt",
-        "projectPath": "C:\\Users\\marus\\Documents\\MiniGIt\\MiniGIt.csproj",
+        "projectPath": "C:\\Users\\marus\\Documents\\MiniGit\\MiniGIt.csproj",
         "packagesPath": "C:\\Users\\marus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marus\\Documents\\MiniGIt\\obj\\",
+        "outputPath": "C:\\Users\\marus\\Documents\\MiniGit\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\marus\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -51,6 +51,10 @@
             "Microsoft.Msagl.Drawing": {
               "target": "Package",
               "version": "[1.1.6, )"
+            },
+            "Microsoft.Msagl.GraphViewerGDI": {
+              "target": "Package",
+              "version": "[1.1.7, )"
             }
           },
           "imports": [

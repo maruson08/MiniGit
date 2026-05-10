@@ -1,65 +1,55 @@
 using MiniGit.Models;
-using System.Diagnostics;
 using System.IO;
-
+using System.Drawing;
 namespace MiniGit.Visualization;
+using Microsoft.Msagl.Drawing;
+using Microsoft.Msagl.GraphViewerGdi;
+using System.Collections.Generic;
+
 
 public static class DagExporter
 {
     public static void ExportPng(
         List<CommitNode> commits,
-        string pngPath)
+        string path)
     {
-        string dotPath = "Output/dag.dot";
+        if (string.IsNullOrWhiteSpace(path))
+        {
+            return;
+        }
 
-        List<string> lines = new();
+        Directory.CreateDirectory(
+            Path.GetDirectoryName(path)!
+        );
 
-        lines.Add("digraph G {");
-
-        // 왼쪽 → 오른쪽 방향
-        lines.Add("rankdir=LR;");
-
-        // branch 정렬 개선
-        lines.Add("splines=ortho;");
+        Graph graph = new();
 
         foreach (var commit in commits)
         {
-            string color =
-                commit.Parents.Count > 1
-                ? "orange"
-                : "lightblue";
-
-            lines.Add(
-                $"\"{commit.Id}\" " +
-                $"[style=filled, fillcolor={color}, shape=circle];"
-            );
+            graph.AddNode(commit.Id);
 
             foreach (var parent in commit.Parents)
             {
-                lines.Add(
-                    $"\"{parent.Id}\" -> \"{commit.Id}\";"
+                graph.AddEdge(
+                    parent.Id,
+                    commit.Id
                 );
             }
         }
 
-        lines.Add("}");
+        GraphRenderer renderer =
+            new(graph);
 
-        File.WriteAllLines(dotPath, lines);
+        renderer.CalculateLayout();
 
-        ProcessStartInfo startInfo = new()
-        {
-            FileName =
-    @"C:\Program Files\Graphviz\bin\dot.exe",
+        int width = 1200;
+        int height = 800;
 
-            Arguments =
-                $"-Tpng \"{dotPath}\" -o \"{pngPath}\"",
+        using Bitmap bitmap =
+            new(width, height);
 
-            CreateNoWindow = true,
-            UseShellExecute = false
-        };
+        renderer.Render(bitmap);
 
-        Process process = Process.Start(startInfo)!;
-
-        process.WaitForExit();
+        bitmap.Save(path);
     }
 }

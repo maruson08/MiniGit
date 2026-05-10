@@ -30,6 +30,25 @@
             "related": ".xml"
           }
         }
+      },
+      "Microsoft.Msagl.GraphViewerGDI/1.1.7": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Msagl.Drawing": "1.1.6"
+        },
+        "compile": {
+          "lib/net7.0-windows7.0/Microsoft.Msagl.GraphViewerGdi.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows7.0/Microsoft.Msagl.GraphViewerGdi.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App"
+        ]
       }
     }
   },
@@ -59,12 +78,30 @@
         "microsoft.msagl.drawing.1.1.6.nupkg.sha512",
         "microsoft.msagl.drawing.nuspec"
       ]
+    },
+    "Microsoft.Msagl.GraphViewerGDI/1.1.7": {
+      "sha512": "av6SIZxaNILJ2r0ALvRBppOPYNCkGr2OQTx6XhwpB4rwrHtvKpcP5Olj9Qj4Yq6ijthKkmmkhHkDk6MHfpqbtA==",
+      "type": "package",
+      "path": "microsoft.msagl.graphviewergdi/1.1.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net472/Microsoft.Msagl.GraphViewerGdi.dll",
+        "lib/net472/Microsoft.Msagl.GraphViewerGdi.xml",
+        "lib/net6.0-windows7.0/Microsoft.Msagl.GraphViewerGdi.dll",
+        "lib/net6.0-windows7.0/Microsoft.Msagl.GraphViewerGdi.xml",
+        "lib/net7.0-windows7.0/Microsoft.Msagl.GraphViewerGdi.dll",
+        "lib/net7.0-windows7.0/Microsoft.Msagl.GraphViewerGdi.xml",
+        "microsoft.msagl.graphviewergdi.1.1.7.nupkg.sha512",
+        "microsoft.msagl.graphviewergdi.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net10.0-windows7.0": [
       "Microsoft.Msagl >= 1.1.6",
-      "Microsoft.Msagl.Drawing >= 1.1.6"
+      "Microsoft.Msagl.Drawing >= 1.1.6",
+      "Microsoft.Msagl.GraphViewerGDI >= 1.1.7"
     ]
   },
   "packageFolders": {
@@ -117,6 +154,10 @@
           "Microsoft.Msagl.Drawing": {
             "target": "Package",
             "version": "[1.1.6, )"
+          },
+          "Microsoft.Msagl.GraphViewerGDI": {
+            "target": "Package",
+            "version": "[1.1.7, )"
           }
         },
         "imports": [

@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "ZPT3aOUbM40=",
+  "dgSpecHash": "VHFPMxfPvSQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\marus\\Documents\\MiniGIt\\MiniGIt.csproj",
+  "projectFilePath": "C:\\Users\\marus\\Documents\\MiniGit\\MiniGIt.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\marus\\.nuget\\packages\\microsoft.msagl\\1.1.6\\microsoft.msagl.1.1.6.nupkg.sha512",
-    "C:\\Users\\marus\\.nuget\\packages\\microsoft.msagl.drawing\\1.1.6\\microsoft.msagl.drawing.1.1.6.nupkg.sha512"
+    "C:\\Users\\marus\\.nuget\\packages\\microsoft.msagl.drawing\\1.1.6\\microsoft.msagl.drawing.1.1.6.nupkg.sha512",
+    "C:\\Users\\marus\\.nuget\\packages\\microsoft.msagl.graphviewergdi\\1.1.7\\microsoft.msagl.graphviewergdi.1.1.7.nupkg.sha512"
   ],
   "logs": []
 }
